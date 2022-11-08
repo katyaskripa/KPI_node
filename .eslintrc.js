@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['plugin:sonarjs/recommended', 'prettier'],
+  extends: ['plugin:sonarjs/recommended', 'prettier', 'airbnb-standard'],
   plugins: ['sonarjs'],
   env: {
     browser: true,
@@ -7,7 +7,7 @@ module.exports = {
   },
   overrides: [],
   parserOptions: {
-    ecmaVersion: 'latest',
+    ecmaVersion: 2021,
     sourceType: 'module',
   },
   rules: {
